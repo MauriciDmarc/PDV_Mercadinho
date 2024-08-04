@@ -12,4 +12,4 @@
 </div>
 
 <hr>
-Um projeto feito por alunos de ADS da faculdade Unifatecie
+Um projeto feito por alunos de ADS da faculdade Unifatecie para trabalhar o desenvolvimento em equipe, e o compartilhamento de conhecimento
