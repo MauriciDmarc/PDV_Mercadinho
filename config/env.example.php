@@ -1,6 +1,10 @@
 <?php
 
 /**
+ * Instruções:
+ * Copiar este arquivo
+ * Renomear para env.php
+ * 
  * Dados necessário para estabelecer conexão com o banco de dados
  * Preencher conforme seu MySQL
  */
