@@ -5,45 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/header.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
     
     <title>PDV para Mercadinho</title>
 </head>
 <body>
-    <header class="header" id="header">
-        <button type="button" onclick="toggleSidebar()" class="btn-icon-header" aria-label="Toggle Sidebar">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-          </svg>
-        </button>
-        <span class="logo"> PDV </span>
-
-        <nav class="navigation-header" id="navigation-header">
+    <header>
+      <div class="header" id="header">
           <button type="button" onclick="toggleSidebar()" class="btn-icon-header" aria-label="Toggle Sidebar">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
               viewBox="0 0 16 16">
-              <path
-                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
           </button>
-          <a href="/" onclick="route()">Home</a>
-          <a href="/developers" onclick="route()" aria-label="Home">Desenvolvedores</a>
-          <a href="/Preços" onclick="route()" aria-label="Sobre">Preços</a>
-          <a href="/Servicos" onclick="route()" aria-label="Projetos">Servicos</a>
+          <span class="logo"> PDV </span>
+          <nav class="navigation-header" id="navigation-header">
+            <button type="button" onclick="toggleSidebar()" class="btn-icon-header" aria-label="Toggle Sidebar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                viewBox="0 0 16 16">
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+            </button>
+            <a href="/" onclick="route()">Home</a>
+            <a href="/developers" onclick="route()" aria-label="Home">Desenvolvedores</a>
+            <a href="/Servicos" onclick="route()" aria-label="Projetos">Servicos</a>
+            <button class="buton-loguin">
+              <a href="/login" onclick="route()">Entrar</a>
+            </button>
+          </nav>
+        </div>
+    </header>
 
-          <button class="buton-loguin">
-            <a href="/login" onclick="route()">Entrar</a>
-          </button>
-        </nav>
+      <main id="app">
+        <div class="descricao">
+          <span>Sistema de PDV</span>
+          <h1>Sistema de PDV Moderno
+            para o Seu Mercadinho!</h1>
+          <p>Nosso sistema de PDV simplifica a gestão de vendas, estoque e clientes. Com recursos intuitivos e relatórios detalhados, você terá mais controle sobre o seu negócio.</p>
+          <button>Comece já</button>
+        </div>
 
-      </header>
-
-      <div id="app"></div>
+        <div class="baner">
+          <img src="assets/baner.png" alt="imagem com 5 pessoal conversando e olhando para um notebbok">
+        </div>
+      </main>
 
       <script src="./js/menu.js"></script>
-      <script src="./js/index.js" type="module"></script>
+      
 </body>
 </html>
